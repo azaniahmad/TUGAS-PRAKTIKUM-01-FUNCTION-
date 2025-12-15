@@ -34,7 +34,6 @@ Untuk mengompilasi dan menjalankan program ini, Anda memerlukan C++ compiler sep
 
 - **Nama:** M.KRISNA.Y.P
 - **Kelas:** Malam Karyawan TI C
-- **NIM:** [Silakan isi NIM Anda di sini]
 
 ## Konsep Fungsi
 
