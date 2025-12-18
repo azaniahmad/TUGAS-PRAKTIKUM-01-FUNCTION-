@@ -1,30 +1,35 @@
 #include <iostream>
+using namespace std;
 
-// Function declaration
+// Deklarasi variabel global
+int input = 0;
+int jumlah = 0;
+int banyakData = 0;
+double rata;
+
+// Deklarasi function
 void hitungAverage(int jumlah, int banyakData);
 
 int main() {
-    int input = 0;
-    int jumlah = 0;
-    int banyakData = 0;
-
-    std::cout << "Masukkan data" << std::endl;
-
-    for (int i = 0; i < 3; ++i) {
-        std::cin >> input;
-        jumlah += input;
-        banyakData++;
+    cout << "Masukkan data" << endl;
+    
+    // Input sebanyak 3 kali
+    for (int i = 0; i < 3; i++) {
+        cin >> input;
+        jumlah += input;  // Menjumlahkan semua input
+        banyakData++;     // Menghitung banyaknya data
     }
-
+    
+    // Memanggil function hitungAverage
     hitungAverage(jumlah, banyakData);
-
+    
     return 0;
 }
 
+// Implementasi function hitungAverage
 void hitungAverage(int jumlah, int banyakData) {
-    double rata;
-    rata = static_cast<double>(jumlah) / banyakData;
-    std::cout << "Jumlah Angka = " << jumlah << std::endl;
-    std::cout << "Banyak Data = " << banyakData << std::endl;
-    std::cout << "Rata-ratanya = " << rata << std::endl;
+    cout << "Jumlah Angka = " << jumlah << endl;
+    cout << "Banyak Data = " << banyakData << endl;
+    rata = (double)jumlah / banyakData;
+    cout << "Rata-ratnya = " << rata << endl;
 }
